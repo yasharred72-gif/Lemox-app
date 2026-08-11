@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1B2A4A" />
+<title>LEMOX</title>
+<link rel="apple-touch-icon" href="data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCABgAGADASIAAhEBAxEB/8QAGwABAAMBAQEBAAAAAAAAAAAAAAQFBgMBAgf/xAA0EAACAQQBAgQEBAQHAAAAAAABAgMABAURIRIxEyJBUQYyYXEUFYGRQlKhsQczQ2KC0fD/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EACMRAAICAgEEAgMAAAAAAAAAAAABAhEhMRIDMlFhQbETkfD/2gAMAwEAAhEDEQA/APxmlKUApSlAKUrvY2ct/ewWcABlnkEabOhsnVNA4Urrc272tzJbyAdcTlG0djYOj/auVAKUpQClKUApSlAKUqbjMTeZa7W2s4fEc66tkAKPck9h9ahtLLGyLDE00yRKR1OwUb7c1ocLCmOzNlJDfF0uCFHhrouA42G52qnXfvoHirCHC2+HiuIL9Y5/CK+N1OViicDYbxAOrq0fkA3336Gof59j7O5aSC3mZmOzJFGkJJ+5DMR+o5rGU+aairNVGss5Zi3OUzN2098waFhGBKvIJcgL330jY55OiOKz8kLxMVcaIJX9Rwa035/jLydXuIZI5FUBZJlWU79SWQKw+mt6qTc4ODLJbwY4LESjNDH4m4m7FmEh8zduVIBX7CinxSUlQcL0zG0qRfWF1jrlre7hMUi86Ojse4I4I+oqPW6aeUZNUKUpQClKsMfjJLso5AMXiqjhWHXz2476PbfvUN0KshwRNM/SpUHW/MwA/rW1wl9nbboswY5OuGNLWQQhXVmYKm26Q5H3OtD14rOFiCgUR9aFyY1iXUZBAGm/i5/8a0+FuY5sbFEtv+ETx4TK/WX0eooH5JKqCSAO3FZdXMdF47MxnsmL278GBmNnbbSDZ5bnzSH/AHMeT99elXvxRiJr5Z8nHOHNpa2weEg9XSYlJYfTZ5+9Zh8bdxAmW2dQruh3xsp84/T1rUrmTM8GTnsJreznZbWToYspjCKhPK8+UAfccVWacWnD4LRp2mZ3F4SXJwXk6yrFHaRGRiwJLaG9AV2+HL54chHamUpHO69LjvFKD5HH2PB9wSKvLGMpf5m0tl8SGGyuFLRglWdiOAfXgAD7VmLbG3cl3bxiIq00yxrv0Y6I37cEGpjLnaeg1xpo0WYuspkWliAitbXwFMpeMMw0ek7YKX0GUgneuO/NZKaF4JXikUq6MVZT3BFbnL3llFjYppLQXQdpXTTEeGGlYoD7q3zaPHmXis00yvbyTzGN9OrSRumzL1Dluvvve+O3H7z0u3VETyyopU2/xk1iQXACOSYwWHUVH8RA7D/o1C1WyyZgHmtHhEyeSvBcWsE5aIr0TKSQjA8KST2PsO3BArOitTnbo2OKiw0Ny0PggeLEv+rsAg/QckkHudcdtUneEvktHyDg7jC3ckjGPwJFZGW4PQNcHRY62NjuuyfbnVfcWRDtdXRd5rQhkeONAok0B1Hp2OlACAF76/Wsn+1dUuJo4jEsrBGOyoPB41/YkU4eRZtr02eaxtqk7MngzmUSuQrPGwHV4gB8jnSnqPlbWwQTVLH8NXUscEJjdZZLkxu7HSovGm54IOzo75I1VT+Y3BvI7pmBkj1yPKW17kcn71ar8UvLf2slxZWiW0Mis8UEXT16O9k72T69+SKy4Tj2l1KL2en4dmiV4jHKJYrkoXHyMgJBb2A4HJPJJHpU+N7TD2LxRtJIrSNKzrouoIKgL/x4L9h1HWzrVY/xNIHuEjs7VoJHLRq8fmjG+NHfFVKXUyGVg22lUqzMNnR78ntvtUqE5dwcortNHcXcttLFLKzRxdCxmO5iBWIlOoKVG9xsp7DkaHqBtBhZM5k0mfw1tU6YwtufE0gHHO+33O/pWbluZ50VJZmdUJKqzcAnWz/QfsK46+1acMYKXnJe5I3mIuvNbFEclmMg8srb5Ggew7BSeB3HNUJrSY+6N7hpMdPIs5KySKG+eLpUtvZ7/KND6ms2aR8MS9Ha1hFxcpEW11HX1P0H1PYVZ5WGO5kRrYH8RFEqXEXUGPUo11AjuNAb9iDVNXoNWat2ReKNHl5GPwVgOE273IZggBbpZQuzrZ1s1I/w9j8XM3kRWNurHXDL4oXpDBdqdtwNHnfpUa5yODuvh7GY55b9JbJpWZxAhVusgkAde+NVIw2b+H8Rk7maNL8wPYvaoPDTrYuumdvNrueAPTVYSv8AG0lnP2XxyTIeYbI2llDBeXNtcfiNTK8TJJ0dJZdB1459Rv2q0+LrSLI26ZSzt1SWCc2V1HGgALd430PccfcVQO2GS0ZI5L2WZiFDSRKqxrvZIAY7P7Dk1Yp8Tw2l/k5LWOSWC/j2EmUDolB2rcEjg7NTJO047QTWmSrzHQyYHE2FuEV5Mg1vJLrl28oJ37Akgfaq/M38mPzE9ljWNvbWrmJU0PP08Et/MSd965vlrU/DtpYxtcLdW07Th+hekk643vfGu/8ASvMlksfmL38fcrPBcS6NwsSqyu38y7I6d+3OqrCMk86z9lpNNY9FnkpIcFl8VmLS1hEV/aR3MloUBQbJDKARwDrY9q+M9bR4ISS2W5IssviQyOn+XFwSvI+bZ0ddgPrUNs1a3+RS5yCSLDawiKzt4lDKgX5d7I2AeT7n2r7tM5ZzYW8x2XN1OZZvHglRVLRSfxNskb36ioUZRp/v+9C07OOOiFjHM0wY3dxE0UMCHTKrDzMfby7AHrv2qqu4Vt7uWBZBII3Khx2bR71ybXUekkjfGxqvK6UqdmVilKVJA3TdKUA3TdKUA3TdKUA2aUpQClKUB//Z" />
+<link rel="icon" href="data:image/jpeg;base64,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" />
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #1B2A4A; }
+  body { font-family: 'Vazirmatn', sans-serif; color: #1B2A4A; }
+  .app-root { min-height: 100vh; display: flex; justify-content: center; }
+  .phone-shell { width: 100%; max-width: 430px; min-height: 100vh; background: #EFE9DA; position: relative; display: flex; flex-direction: column; box-shadow: 0 0 60px rgba(0,0,0,0.35); }
+  .ledger-header { background: #1B2A4A; color: #F5F0E6; padding: 18px 20px 26px; position: relative; }
+  .brand-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .brand-logo { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; border: 1px solid #B98B3D; }
+  .brand-name { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 14px; letter-spacing: 1.5px; color: #B98B3D; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.5px; color: #B98B3D; font-weight: 600; margin-bottom: 4px; display:flex; justify-content:space-between; align-items:center; }
+  .ledger-header h1 { font-size: 22px; font-weight: 800; margin: 0; }
+  .ledger-header .sub { font-size: 12.5px; color: #C9CFDD; margin-top: 6px; display: flex; align-items: center; gap: 6px; }
+  .perf-row { display: flex; justify-content: space-between; padding: 0 10px; transform: translateY(9px); }
+  .perf-dot { width: 9px; height: 9px; border-radius: 50%; background: #1B2A4A; }
+  .content { flex: 1; padding: 22px 16px 100px; overflow-y: auto; }
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 22px; }
+  .stat-card { background: #F5F0E6; border: 1px solid #D8CFB8; border-radius: 10px; padding: 10px 8px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+  .stat-icon { width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+  .stat-value { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 15px; color: #1B2A4A; }
+  .stat-label { font-size: 11px; color: #6b6250; margin-top: 2px; }
+  .section-title { font-size: 15px; font-weight: 700; color: #1B2A4A; margin: 4px 0 12px; display: flex; align-items: center; gap: 6px; }
+  .receipt-card { background: #F5F0E6; border: 1px dashed #C7BC9E; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; }
+  .receipt-row { display: flex; justify-content: space-between; align-items: center; }
+  .receipt-name { font-weight: 600; font-size: 13.5px; }
+  .receipt-meta { font-size: 11.5px; color: #857a5f; margin-top: 3px; }
+  .receipt-total { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 13.5px; color: #B5443A; }
+  .empty-state { text-align: center; padding: 40px 20px; color: #7a715c; font-size: 13px; }
+  .search-bar { display: flex; align-items: center; gap: 8px; background: #F5F0E6; border: 1px solid #D8CFB8; border-radius: 10px; padding: 10px 12px; margin-bottom: 14px; }
+  .search-bar input { border: none; background: transparent; outline: none; font-family: 'Vazirmatn', sans-serif; font-size: 13.5px; flex: 1; color: #1B2A4A; }
+  .customer-card { background: #F5F0E6; border: 1px solid #D8CFB8; border-radius: 10px; padding: 13px 14px; margin-bottom: 10px; cursor: pointer; }
+  .customer-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .customer-name { font-weight: 700; font-size: 14px; }
+  .customer-shop { font-size: 11.5px; color: #857a5f; margin-top: 2px; }
+  .badge { font-family: 'IBM Plex Mono', monospace; font-size: 11px; background: #1B2A4A; color: #F5F0E6; padding: 3px 8px; border-radius: 20px; white-space: nowrap; }
+  .customer-meta-row { display: flex; gap: 14px; margin-top: 8px; font-size: 11px; color: #6b6250; flex-wrap: wrap; }
+  .customer-meta-row span { display: flex; align-items: center; gap: 4px; }
+  .fab { position: absolute; left: 16px; bottom: 92px; width: 52px; height: 52px; border-radius: 50%; background: #B5443A; color: #F5F0E6; border: none; display: flex; align-items: center; justify-content: center; font-size: 22px; box-shadow: 0 8px 18px rgba(181,68,58,0.4); cursor: pointer; z-index: 10; }
+  .bottom-nav { position: sticky; bottom: 0; background: #1B2A4A; display: flex; justify-content: space-around; padding: 10px 6px 14px; box-shadow: 0 -4px 16px rgba(0,0,0,0.25); }
+  .nav-btn { background: none; border: none; display: flex; flex-direction: column; align-items: center; gap: 4px; color: #8B93A8; font-family: 'Vazirmatn', sans-serif; font-size: 10.5px; padding: 4px 10px; cursor: pointer; position: relative; }
+  .nav-btn.active { color: #F5F0E6; }
+  .nav-btn.active .nav-dot { width: 4px; height: 4px; border-radius: 50%; background: #B98B3D; position: absolute; top: -6px; }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(27,42,74,0.55); display: flex; align-items: flex-end; justify-content: center; z-index: 50; }
+  .modal-sheet { width: 100%; max-width: 430px; background: #EFE9DA; border-radius: 18px 18px 0 0; padding: 20px; max-height: 88vh; overflow-y: auto; }
+  .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .modal-header h3 { margin: 0; font-size: 16px; font-weight: 700; color: #1B2A4A; }
+  .icon-btn { background: #F5F0E6; border: 1px solid #D8CFB8; border-radius: 8px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+  .field { margin-bottom: 12px; }
+  .field label { display: block; font-size: 11.5px; color: #6b6250; margin-bottom: 5px; font-weight: 600; }
+  .field input, .field select { width: 100%; border: 1px solid #D8CFB8; background: #F5F0E6; border-radius: 8px; padding: 10px 12px; font-family: 'Vazirmatn', sans-serif; font-size: 13.5px; color: #1B2A4A; outline: none; }
+  .primary-btn { width: 100%; background: #1B2A4A; color: #F5F0E6; border: none; border-radius: 10px; padding: 13px; font-family: 'Vazirmatn', sans-serif; font-weight: 700; font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .primary-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .secondary-btn { width: 100%; background: #4C7A6A; color: #F5F0E6; border: none; border-radius: 10px; padding: 12px; font-family: 'Vazirmatn', sans-serif; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; margin-bottom: 16px; }
+  .product-row { background: #F5F0E6; border: 1px solid #D8CFB8; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+  .product-row-top { display: flex; justify-content: space-between; align-items: baseline; }
+  .product-row-inputs { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .product-name { font-size: 13px; font-weight: 600; }
+  .product-price { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: #857a5f; margin-top: 2px; }
+  .price-input { width: 72px; border: 1px solid #D8CFB8; background: #EFE9DA; border-radius: 8px; padding: 7px 8px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #1B2A4A; outline: none; text-align: center; }
+  .qty-input { width: 56px; }
+  .note-input { flex: 1; min-width: 90px; border: 1px solid #D8CFB8; background: #EFE9DA; border-radius: 8px; padding: 7px 10px; font-family: 'Vazirmatn', sans-serif; font-size: 12px; color: #1B2A4A; outline: none; }
+  .qty-stepper { display: flex; align-items: center; gap: 8px; background: #EFE9DA; border-radius: 20px; padding: 4px 8px; width: fit-content; }
+  .qty-stepper button { width: 22px; height: 22px; border-radius: 50%; border: none; background: #1B2A4A; color: #F5F0E6; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+  .qty-stepper .qty-num { font-family: 'IBM Plex Mono', monospace; font-size: 13px; min-width: 14px; text-align: center; }
+  .add-chip { border: 1px dashed #B98B3D; color: #B98B3D; background: transparent; border-radius: 20px; padding: 6px 12px; font-size: 11.5px; font-family: 'Vazirmatn', sans-serif; font-weight: 600; cursor: pointer; }
+  .add-chip:disabled { opacity: 0.4; cursor: not-allowed; }
+  .order-total-bar { position: sticky; bottom: 0; background: #F5F0E6; border-top: 2px dashed #C7BC9E; margin: 16px -16px -100px; padding: 14px 16px 18px; }
+  .stamp { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 100; pointer-events: none; }
+  .stamp-inner { border: 5px solid #B5443A; color: #B5443A; font-weight: 800; font-size: 22px; padding: 14px 34px; border-radius: 10px; transform: rotate(-12deg); background: rgba(245,240,230,0.92); animation: stampIn 0.35s ease-out; }
+  @keyframes stampIn { 0% { transform: rotate(-12deg) scale(2.4); opacity: 0; } 100% { transform: rotate(-12deg) scale(1); opacity: 1; } }
+  .rank-bar-track { background: #EFE9DA; border-radius: 6px; height: 8px; margin-top: 8px; overflow: hidden; }
+  .rank-bar-fill { height: 100%; background: linear-gradient(90deg, #B98B3D, #B5443A); border-radius: 6px; }
+  .rank-num { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; color: #B98B3D; width: 18px; }
+  .back-btn { display: flex; align-items: center; gap: 6px; background: none; border: none; color: #1B2A4A; font-family: 'Vazirmatn', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; margin-bottom: 14px; }
+  .detail-header-card { background: #F5F0E6; border: 1px solid #D8CFB8; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+  .avatar-circle { width: 46px; height: 46px; border-radius: 50%; background: #1B2A4A; color: #F5F0E6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; }
+  .login-wrap { min-height:100vh; display:flex; flex-direction:column; justify-content:center; padding:28px 22px; }
+  .login-title { font-size:20px; font-weight:800; color:#F5F0E6; margin-bottom:4px; text-align:center; }
+  .login-sub { font-size:12.5px; color:#B8C0D6; margin-bottom:26px; }
+  .tab-toggle { display:flex; gap:8px; margin-bottom: 18px; }
+  .tab-toggle button { flex:1; padding:9px; border-radius:20px; border:1px solid #3A4E7A; background:transparent; color:#B8C0D6; font-family:'Vazirmatn',sans-serif; font-size:12.5px; font-weight:600; cursor:pointer; }
+  .tab-toggle button.active { background:#B98B3D; color:#1B2A4A; border-color:#B98B3D; }
+  .loading-wrap { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; color:#F5F0E6; }
+  .spin { animation: spin 1s linear infinite; display:inline-block; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .logout-btn { background:none; border:none; color:#C9CFDD; display:flex; align-items:center; gap:4px; font-size:11px; cursor:pointer; font-family:'Vazirmatn',sans-serif; }
+  .rep-summary-card { background:#F5F0E6; border:1px solid #D8CFB8; border-radius:10px; padding:12px 14px; margin-bottom:10px; }
+  .toast-banner { position: fixed; bottom: 84px; left: 50%; transform: translateX(-50%); background: #1B2A4A; color: #F5F0E6; font-size: 12.5px; padding: 10px 18px; border-radius: 30px; z-index: 200; box-shadow: 0 6px 16px rgba(0,0,0,0.3); white-space: nowrap; }
+  .location-box { background:#EFE9DA; border:1px solid #D8CFB8; border-radius:8px; padding:10px 12px; margin-bottom:12px; }
+  .map-link { display:flex; align-items:center; gap:5px; font-size:12px; color:#4C7A6A; font-weight:600; text-decoration:none; margin-top:6px; }
+  .config-warning { position:fixed; inset:0; background:#1B2A4A; color:#F5F0E6; display:flex; align-items:center; justify-content:center; padding:24px; z-index:999; text-align:center; font-size:14px; line-height:1.9; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react,env">
+const { useState, useEffect, useMemo } = React;
+
+const LEMOX_LOGO =
+  "data:image/jpeg;base64," +
+  "/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIo" +
+  "Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCABgAGADASIAAhEBAxEB/8QAGwABAAMBAQEBAAAAAAAAAAAA" +
+  "AAQFBgMBAgf/xAA0EAACAQQBAgQEBAQHAAAAAAABAgMABAURIRIxEyJBUQYyYXEUFYGRQlKhsQczQ2KC0fD/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/E" +
+  "ACMRAAICAgEEAgMAAAAAAAAAAAABAhEhMRIDMlFhQbETkfD/2gAMAwEAAhEDEQA/APxmlKUApSlAKUrvY2ct/ewWcABlnkEabOhsnVNA4Urrc272tzJbyAdc" +
+  "TlG0djYOj/auVAKUpQClKUApSlAKUqbjMTeZa7W2s4fEc66tkAKPck9h9ahtLLGyLDE00yRKR1OwUb7c1ocLCmOzNlJDfF0uCFHhrouA42G52qnXfvoHirCH" +
+  "C2+HiuIL9Y5/CK+N1OViicDYbxAOrq0fkA3336Gof59j7O5aSC3mZmOzJFGkJJ+5DMR+o5rGU+aairNVGss5Zi3OUzN2098waFhGBKvIJcgL330jY55OiOKz" +
+  "8kLxMVcaIJX9Rwa035/jLydXuIZI5FUBZJlWU79SWQKw+mt6qTc4ODLJbwY4LESjNDH4m4m7FmEh8zduVIBX7CinxSUlQcL0zG0qRfWF1jrlre7hMUi86Ojs" +
+  "e4I4I+oqPW6aeUZNUKUpQClKsMfjJLso5AMXiqjhWHXz2476PbfvUN0KshwRNM/SpUHW/MwA/rW1wl9nbboswY5OuGNLWQQhXVmYKm26Q5H3OtD14rOFiCgU" +
+  "R9aFyY1iXUZBAGm/i5/8a0+FuY5sbFEtv+ETx4TK/WX0eooH5JKqCSAO3FZdXMdF47MxnsmL278GBmNnbbSDZ5bnzSH/AHMeT99elXvxRiJr5Z8nHOHNpa2w" +
+  "eEg9XSYlJYfTZ5+9Zh8bdxAmW2dQruh3xsp84/T1rUrmTM8GTnsJreznZbWToYspjCKhPK8+UAfccVWacWnD4LRp2mZ3F4SXJwXk6yrFHaRGRiwJLaG9AV2+" +
+  "HL54chHamUpHO69LjvFKD5HH2PB9wSKvLGMpf5m0tl8SGGyuFLRglWdiOAfXgAD7VmLbG3cl3bxiIq00yxrv0Y6I37cEGpjLnaeg1xpo0WYuspkWliAitbXw" +
+  "FMpeMMw0ek7YKX0GUgneuO/NZKaF4JXikUq6MVZT3BFbnL3llFjYppLQXQdpXTTEeGGlYoD7q3zaPHmXis00yvbyTzGN9OrSRumzL1Dluvvve+O3H7z0u3VE" +
+  "TyyopU2/xk1iQXACOSYwWHUVH8RA7D/o1C1WyyZgHmtHhEyeSvBcWsE5aIr0TKSQjA8KST2PsO3BArOitTnbo2OKiw0Ny0PggeLEv+rsAg/QckkHudcdtUne" +
+  "EvktHyDg7jC3ckjGPwJFZGW4PQNcHRY62NjuuyfbnVfcWRDtdXRd5rQhkeONAok0B1Hp2OlACAF76/Wsn+1dUuJo4jEsrBGOyoPB41/YkU4eRZtr02eaxtqk" +
+  "7MngzmUSuQrPGwHV4gB8jnSnqPlbWwQTVLH8NXUscEJjdZZLkxu7HSovGm54IOzo75I1VT+Y3BvI7pmBkj1yPKW17kcn71ar8UvLf2slxZWiW0Mis8UEXT16" +
+  "O9k72T69+SKy4Tj2l1KL2en4dmiV4jHKJYrkoXHyMgJBb2A4HJPJJHpU+N7TD2LxRtJIrSNKzrouoIKgL/x4L9h1HWzrVY/xNIHuEjs7VoJHLRq8fmjG+NHf" +
+  "FVKXUyGVg22lUqzMNnR78ntvtUqE5dwcortNHcXcttLFLKzRxdCxmO5iBWIlOoKVG9xsp7DkaHqBtBhZM5k0mfw1tU6YwtufE0gHHO+33O/pWbluZ50VJZmd" +
+  "UJKqzcAnWz/QfsK46+1acMYKXnJe5I3mIuvNbFEclmMg8srb5Ggew7BSeB3HNUJrSY+6N7hpMdPIs5KySKG+eLpUtvZ7/KND6ms2aR8MS9Ha1hFxcpEW11HX" +
+  "1P0H1PYVZ5WGO5kRrYH8RFEqXEXUGPUo11AjuNAb9iDVNXoNWat2ReKNHl5GPwVgOE273IZggBbpZQuzrZ1s1I/w9j8XM3kRWNurHXDL4oXpDBdqdtwNHnfp" +
+  "Ua5yODuvh7GY55b9JbJpWZxAhVusgkAde+NVIw2b+H8Rk7maNL8wPYvaoPDTrYuumdvNrueAPTVYSv8AG0lnP2XxyTIeYbI2llDBeXNtcfiNTK8TJJ0dJZdB" +
+  "1459Rv2q0+LrSLI26ZSzt1SWCc2V1HGgALd430PccfcVQO2GS0ZI5L2WZiFDSRKqxrvZIAY7P7Dk1Yp8Tw2l/k5LWOSWC/j2EmUDolB2rcEjg7NTJO047QTW" +
+  "mSrzHQyYHE2FuEV5Mg1vJLrl28oJ37Akgfaq/M38mPzE9ljWNvbWrmJU0PP08Et/MSd965vlrU/DtpYxtcLdW07Th+hekk643vfGu/8ASvMlksfmL38fcrPB" +
+  "cS6NwsSqyu38y7I6d+3OqrCMk86z9lpNNY9FnkpIcFl8VmLS1hEV/aR3MloUBQbJDKARwDrY9q+M9bR4ISS2W5IssviQyOn+XFwSvI+bZ0ddgPrUNs1a3+RS" +
+  "5yCSLDawiKzt4lDKgX5d7I2AeT7n2r7tM5ZzYW8x2XN1OZZvHglRVLRSfxNskb36ioUZRp/v+9C07OOOiFjHM0wY3dxE0UMCHTKrDzMfby7AHrv2qqu4Vt7u" +
+  "WBZBII3Khx2bR71ybXUekkjfGxqvK6UqdmVilKVJA3TdKUA3TdKUA3TdKUA2aUpQClKUB//Z";
+
+const productCatalog = [
+  "اسپری شیشه پاک کن","اسپری داشبورد","اسپری لاستیک","اسپری جرم گیر","کرم شستشو دست",
+  "شیشه پاک کن ۲۰ لیتری","واکس داشبورد ۲۰ لیتری","واکس لاستیک ۲۰ لیتری","جرم گیر ۲۰ لیتری",
+  "شیشه پاک کن ۴ لیتری","واکس داشبورد ۴ لیتری","واکس لاستیک ۴ لیتری","جرم گیر ۴ لیتری",
+  "خش گیر","روغن موتور ۱ لیتری","روغن موتور ۴ لیتری",
+];
+
+const fmt = (n) => (n || 0).toLocaleString("fa-IR");
+const faDigits = ["۰","۱","۲","۳","۴","۵","۶","۷","۸","۹"];
+const toFaDigits = (s) => String(s).replace(/[0-9]/g, (d) => faDigits[+d]);
+const displayDate = (iso) => (iso ? toFaDigits(iso.split("-").join("/")) : "—");
+const todayISO = () => new Date().toISOString().slice(0, 10);
+
+function Ic({ children, size = 16 }) {
+  return <span style={{ display: "inline-block", fontSize: size, lineHeight: 1, verticalAlign: "middle" }}>{children}</span>;
+}
+
+function PerforatedTop() {
+  return <div className="perf-row" aria-hidden="true">{Array.from({ length: 26 }).map((_, i) => <span key={i} className="perf-dot" />)}</div>;
+}
+
+function StatCard({ icon, label, value, accent }) {
+  return (
+    <div className="stat-card">
+      <div className="stat-icon" style={{ background: accent }}><Ic size={16}>{icon}</Ic></div>
+      <div><div className="stat-value">{value}</div><div className="stat-label">{label}</div></div>
+    </div>
+  );
+}
+
+async function apiGet(key) {
+  const res = await fetch(`/api/data?key=${key}`);
+  if (!res.ok) throw new Error("fetch failed");
+  const data = await res.json();
+  return data.value || [];
+}
+async function apiSet(key, value) {
+  const res = await fetch(`/api/data?key=${key}`, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ value }),
+  });
+  if (!res.ok) throw new Error("save failed");
+  return true;
+}
+
+function App() {
+  const [booting, setBooting] = useState(true);
+  const [storageError, setStorageError] = useState(false);
+  const [customers, setCustomers] = useState([]);
+  const [orders, setOrders] = useState([]);
+  const [toast, setToast] = useState(null);
+
+  const [currentUser, setCurrentUser] = useState(null);
+  const [tab, setTab] = useState("dashboard");
+  const [selectedCustomerId, setSelectedCustomerId] = useState(null);
+  const [showAddCustomer, setShowAddCustomer] = useState(false);
+  const [search, setSearch] = useState("");
+  const [stampVisible, setStampVisible] = useState(false);
+
+  const [draftCustomerId, setDraftCustomerId] = useState("");
+  const [draftItems, setDraftItems] = useState([]);
+  const [orderDate, setOrderDate] = useState(todayISO());
+  const [productPrices, setProductPrices] = useState({});
+  const [productQtys, setProductQtys] = useState({});
+  const [productNotes, setProductNotes] = useState({});
+  const [customItemName, setCustomItemName] = useState("");
+  const [customItemPrice, setCustomItemPrice] = useState("");
+  const [customItemQty, setCustomItemQty] = useState("");
+  const [customItemNote, setCustomItemNote] = useState("");
+
+  function showToast(text) { setToast(text); setTimeout(() => setToast(null), 1800); }
+
+  async function loadData(silent) {
+    try {
+      const [cust, ord] = await Promise.all([apiGet("customers"), apiGet("orders")]);
+      setCustomers(cust);
+      setOrders(ord);
+      setStorageError(false);
+    } catch (e) {
+      if (!silent) setStorageError(true);
+    } finally {
+      setBooting(false);
+    }
+  }
+
+  useEffect(() => {
+    loadData(false);
+    const interval = setInterval(() => loadData(true), 8000); // sync with teammates every 8s
+    return () => clearInterval(interval);
+  }, []);
+
+  async function persistCustomers(next, successMsg) {
+    setCustomers(next);
+    try {
+      await apiSet("customers", next);
+      setStorageError(false);
+      if (successMsg) showToast(successMsg);
+      return true;
+    } catch (e) { setStorageError(true); return false; }
+  }
+
+  async function persistOrders(next, successMsg) {
+    setOrders(next);
+    try {
+      await apiSet("orders", next);
+      setStorageError(false);
+      if (successMsg) showToast(successMsg);
+      return true;
+    } catch (e) { setStorageError(true); return false; }
+  }
+
+  const visibleOrders = useMemo(() => {
+    if (!currentUser) return [];
+    if (currentUser.role === "manager") return orders;
+    return orders.filter((o) => o.repName === currentUser.name);
+  }, [orders, currentUser]);
+
+  const customerTotals = useMemo(() => {
+    const map = {};
+    customers.forEach((c) => { map[c.id] = { count: 0, total: 0, last: null }; });
+    visibleOrders.forEach((o) => {
+      if (!map[o.customerId]) return;
+      map[o.customerId].count += 1;
+      map[o.customerId].total += o.total;
+      if (!map[o.customerId].last || o.date > map[o.customerId].last) map[o.customerId].last = o.date;
+    });
+    return map;
+  }, [customers, visibleOrders]);
+
+  const repStats = useMemo(() => {
+    const map = {};
+    orders.forEach((o) => {
+      if (!map[o.repName]) map[o.repName] = { count: 0, total: 0, products: {} };
+      map[o.repName].count += 1;
+      map[o.repName].total += o.total;
+      o.items.forEach((it) => { map[o.repName].products[it.name] = (map[o.repName].products[it.name] || 0) + it.qty; });
+    });
+    return Object.entries(map).map(([name, s]) => {
+      const top = Object.entries(s.products).sort((a, b) => b[1] - a[1])[0];
+      return { name, count: s.count, total: s.total, topProduct: top ? top[0] : "—" };
+    }).sort((a, b) => b.total - a.total);
+  }, [orders]);
+
+  const productStats = useMemo(() => {
+    const map = {};
+    orders.forEach((o) => o.items.forEach((it) => {
+      if (!map[it.name]) map[it.name] = { qty: 0, revenue: 0 };
+      map[it.name].qty += it.qty;
+      map[it.name].revenue += it.qty * it.price;
+    }));
+    return Object.entries(map).map(([name, s]) => ({ name, ...s })).sort((a, b) => b.revenue - a.revenue);
+  }, [orders]);
+
+  const todayOrders = visibleOrders.filter((o) => o.date === todayISO());
+  const todayTotal = todayOrders.reduce((s, o) => s + o.total, 0);
+  const filteredCustomers = customers.filter((c) => (c.name + c.shopName + c.phone).includes(search.trim()));
+  const rankedCustomers = [...customers].sort((a, b) => (customerTotals[b.id]?.total || 0) - (customerTotals[a.id]?.total || 0));
+  const maxTotal = Math.max(1, ...rankedCustomers.map((c) => customerTotals[c.id]?.total || 0));
+
+  function addCustomer(newC) {
+    persistCustomers([...customers, { ...newC, id: "c_" + Date.now() }], "مشتری ذخیره شد ✓");
+    setShowAddCustomer(false);
+  }
+
+  function addDraftItem(item) {
+    setDraftItems((prev) => {
+      const existing = prev.find((i) => i.name === item.name);
+      const addQty = item.qty && item.qty > 0 ? item.qty : 1;
+      if (existing) return prev.map((i) => (i.name === item.name ? { ...i, qty: i.qty + addQty, note: item.note || i.note } : i));
+      return [...prev, { ...item, qty: addQty, note: item.note || "" }];
+    });
+  }
+  function changeQty(name, delta) {
+    setDraftItems((prev) => prev.map((i) => (i.name === name ? { ...i, qty: i.qty + delta } : i)).filter((i) => i.qty > 0));
+  }
+  function addCustomItem() {
+    const price = parseInt(customItemPrice, 10);
+    const qty = parseInt(customItemQty, 10);
+    if (!customItemName.trim() || !price) return;
+    addDraftItem({ name: customItemName.trim(), price, qty: qty > 0 ? qty : 1, note: customItemNote.trim() });
+    setCustomItemName(""); setCustomItemPrice(""); setCustomItemQty(""); setCustomItemNote("");
+  }
+
+  const draftTotal = draftItems.reduce((s, i) => s + i.qty * i.price, 0);
+
+  async function submitOrder() {
+    if (!draftCustomerId || draftItems.length === 0 || !currentUser) return;
+    const order = { id: "o_" + Date.now(), repName: currentUser.name, customerId: draftCustomerId, date: orderDate || todayISO(), items: draftItems, total: draftTotal };
+    const ok = await persistOrders([...orders, order]);
+    if (ok) {
+      setStampVisible(true);
+      setTimeout(() => {
+        setStampVisible(false); setDraftItems([]); setDraftCustomerId(""); setProductPrices({}); setProductQtys({}); setProductNotes({}); setOrderDate(todayISO()); setTab("dashboard");
+      }, 1100);
+    } else { showToast("ذخیره نشد — دوباره تلاش کن"); }
+  }
+
+  function exportExcel() {
+    const rows = [];
+    visibleOrders.forEach((o) => {
+      const cust = customers.find((c) => c.id === o.customerId);
+      o.items.forEach((it) => {
+        rows.push({
+          "تاریخ": displayDate(o.date), "ویزیتور": o.repName, "فروشگاه": cust ? cust.shopName : "—",
+          "مشتری": cust ? cust.name : "—", "کالا": it.name, "تعداد": it.qty,
+          "قیمت واحد (تومان)": it.price, "جمع (تومان)": it.qty * it.price, "توضیحات": it.note || "",
+        });
+      });
+    });
+    if (rows.length === 0) { showToast("سفارشی برای خروجی وجود ندارد"); return; }
+    const ws = XLSX.utils.json_to_sheet(rows);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "گزارش فروش");
+    XLSX.writeFile(wb, `گزارش-فروش-${todayISO()}.xlsx`);
+  }
+
+  const selectedCustomer = customers.find((c) => c.id === selectedCustomerId);
+
+  if (booting) {
+    return (
+      <div className="app-root"><div className="phone-shell">
+        <div className="loading-wrap"><Ic size={26}>⏳</Ic><span style={{ fontSize: 13 }}>در حال بارگذاری دفتر...</span></div>
+      </div></div>
+    );
+  }
+
+  if (!currentUser) return <LoginScreen onLogin={setCurrentUser} storageError={storageError} />;
+
+  return (
+    <div className="app-root"><div className="phone-shell">
+      <div className="ledger-header">
+        <div className="brand-row"><img src={LEMOX_LOGO} alt="LEMOX" className="brand-logo" /><span className="brand-name">LEMOX</span></div>
+        <div className="eyebrow">
+          <span>{currentUser.role === "manager" ? "پنل مدیریت" : "دفتر ویزیتور"} · {currentUser.name}</span>
+          <button className="logout-btn" onClick={() => { setCurrentUser(null); setTab("dashboard"); setSelectedCustomerId(null); }}><Ic size={12}>🚪</Ic> خروج</button>
+        </div>
+        <h1>{currentUser.role === "manager" ? "گزارش کل تیم" : "مسیر امروز"}</h1>
+        <div className="sub"><Ic size={13}>📅</Ic>{displayDate(todayISO())}</div>
+      </div>
+      <PerforatedTop />
+
+      <div className="content">
+        {tab === "dashboard" && (
+          <>
+            <div className="stats-row">
+              <StatCard icon="📋" label={currentUser.role === "manager" ? "سفارش امروز (کل)" : "سفارش امروز"} value={fmt(todayOrders.length)} accent="#1B2A4A" />
+              <StatCard icon="💰" label="فروش امروز (تومان)" value={fmt(todayTotal)} accent="#B5443A" />
+              <StatCard icon="👥" label="کل مشتریان" value={fmt(customers.length)} accent="#B98B3D" />
+            </div>
+            {currentUser.role === "manager" && repStats.length > 0 && (
+              <>
+                <div className="section-title"><Ic size={16}>🏆</Ic> عملکرد ویزیتورها</div>
+                {repStats.slice(0, 4).map((r) => (
+                  <div className="rep-summary-card" key={r.name}>
+                    <div className="receipt-row"><div className="receipt-name">{r.name}</div><div className="receipt-total">{fmt(r.total)} ت</div></div>
+                    <div className="receipt-meta">{fmt(r.count)} سفارش · پرفروش‌ترین: {r.topProduct}</div>
+                  </div>
+                ))}
+              </>
+            )}
+            <div className="section-title"><Ic size={16}>📋</Ic> آخرین سفارش‌ها</div>
+            {[...visibleOrders].reverse().slice(0, 6).map((o) => {
+              const cust = customers.find((c) => c.id === o.customerId);
+              return (
+                <div className="receipt-card" key={o.id}>
+                  <div className="receipt-row">
+                    <div>
+                      <div className="receipt-name">{cust ? cust.shopName : "مشتری حذف‌شده"}</div>
+                      <div className="receipt-meta">{o.items.length} قلم کالا · {displayDate(o.date)}{currentUser.role === "manager" ? ` · ${o.repName}` : ""}</div>
+                    </div>
+                    <div className="receipt-total">{fmt(o.total)} ت</div>
+                  </div>
+                </div>
+              );
+            })}
+            {visibleOrders.length === 0 && <div className="empty-state">هنوز سفارشی ثبت نشده.</div>}
+          </>
+        )}
+
+        {tab === "customers" && !selectedCustomerId && (
+          <>
+            <div className="search-bar"><Ic size={16}>🔍</Ic><input placeholder="جستجوی نام، فروشگاه یا شماره تماس..." value={search} onChange={(e) => setSearch(e.target.value)} /></div>
+            {filteredCustomers.map((c) => {
+              const stat = customerTotals[c.id] || { count: 0, total: 0 };
+              return (
+                <div className="customer-card" key={c.id} onClick={() => setSelectedCustomerId(c.id)}>
+                  <div className="customer-top">
+                    <div><div className="customer-name">{c.shopName}</div><div className="customer-shop">{c.name} · {c.category}</div></div>
+                    <span className="badge">{fmt(stat.count)} سفارش</span>
+                  </div>
+                  <div className="customer-meta-row">
+                    <span><Ic size={12}>📞</Ic> {c.phone}</span>
+                    <span><Ic size={12}>📍</Ic> {c.address}</span>
+                    {(c.lat || c.manualLocation) && <span><Ic size={12}>🧭</Ic> موقعیت ثبت‌شده</span>}
+                  </div>
+                </div>
+              );
+            })}
+            {filteredCustomers.length === 0 && <div className="empty-state">مشتری‌ای با این مشخصات پیدا نشد. با دکمه + اولین مشتری را اضافه کن.</div>}
+          </>
+        )}
+
+        {tab === "customers" && selectedCustomerId && selectedCustomer && (
+          <>
+            <button className="back-btn" onClick={() => setSelectedCustomerId(null)}><Ic size={15}>→</Ic> بازگشت به مشتریان</button>
+            <div className="detail-header-card">
+              <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+                <div className="avatar-circle">{selectedCustomer.shopName.charAt(0)}</div>
+                <div><div className="customer-name">{selectedCustomer.shopName}</div><div className="customer-shop">{selectedCustomer.name}</div></div>
+              </div>
+              <div className="customer-meta-row" style={{ marginTop: 12 }}>
+                <span><Ic size={12}>📞</Ic> {selectedCustomer.phone}</span>
+                <span><Ic size={12}>📍</Ic> {selectedCustomer.address}</span>
+              </div>
+              {selectedCustomer.lat && selectedCustomer.lng && (
+                <a className="map-link" href={`https://www.google.com/maps?q=${selectedCustomer.lat},${selectedCustomer.lng}`} target="_blank" rel="noreferrer">
+                  <Ic size={13}>↗</Ic> مشاهده موقعیت GPS روی نقشه{selectedCustomer.accuracy ? ` (دقت ~${Math.round(selectedCustomer.accuracy)} متر)` : ""}
+                </a>
+              )}
+              {selectedCustomer.manualLocation && (
+                <div className="customer-meta-row" style={{ marginTop: 6 }}><span><Ic size={12}>🧭</Ic> {selectedCustomer.manualLocation}</span></div>
+              )}
+            </div>
+            <div className="stats-row">
+              <StatCard icon="📋" label="تعداد سفارش" value={fmt(customerTotals[selectedCustomerId]?.count || 0)} accent="#1B2A4A" />
+              <StatCard icon="💰" label="مجموع خرید" value={fmt(customerTotals[selectedCustomerId]?.total || 0)} accent="#B5443A" />
+              <StatCard icon="📅" label="آخرین سفارش" value={displayDate(customerTotals[selectedCustomerId]?.last)} accent="#B98B3D" />
+            </div>
+            <div className="section-title"><Ic size={16}>📦</Ic> تاریخچه سفارش‌ها</div>
+            {visibleOrders.filter((o) => o.customerId === selectedCustomerId).reverse().map((o) => (
+              <div className="receipt-card" key={o.id}>
+                <div className="receipt-row">
+                  <div className="receipt-meta">{displayDate(o.date)}{currentUser.role === "manager" ? ` · ${o.repName}` : ""}</div>
+                  <div className="receipt-total">{fmt(o.total)} ت</div>
+                </div>
+                <div style={{ marginTop: 6 }}>{o.items.map((it, idx) => (<div key={idx} className="receipt-meta">{it.name} × {fmt(it.qty)} — {fmt(it.price)} ت{it.note ? ` · ${it.note}` : ""}</div>))}</div>
+              </div>
+            ))}
+            {visibleOrders.filter((o) => o.customerId === selectedCustomerId).length === 0 && <div className="empty-state">هنوز سفارشی از این مشتری ثبت نشده.</div>}
+          </>
+        )}
+
+        {tab === "order" && (
+          <>
+            <div className="field"><label>تاریخ سفارش</label><input type="date" value={orderDate} onChange={(e) => setOrderDate(e.target.value)} /></div>
+            <div className="section-title"><Ic size={16}>👤</Ic> انتخاب مشتری</div>
+            <div className="field">
+              <select value={draftCustomerId} onChange={(e) => setDraftCustomerId(e.target.value)}>
+                <option value="">یک مشتری را انتخاب کن</option>
+                {customers.map((c) => (<option value={c.id} key={c.id}>{c.shopName} — {c.name}</option>))}
+              </select>
+            </div>
+
+            <div className="section-title" style={{ marginTop: 18 }}><Ic size={16}>📦</Ic> کالاها</div>
+            {productCatalog.map((p) => {
+              const inCart = draftItems.find((i) => i.name === p);
+              return (
+                <div className="product-row" key={p}>
+                  <div className="product-row-top">
+                    <div className="product-name">{p}</div>
+                    {inCart && <div className="product-price">{fmt(inCart.price)} تومان{inCart.note ? ` · ${inCart.note}` : ""}</div>}
+                  </div>
+                  {inCart ? (
+                    <div className="qty-stepper" style={{ marginTop: 8 }}>
+                      <button onClick={() => changeQty(p, 1)}>+</button>
+                      <span className="qty-num">{fmt(inCart.qty)}</span>
+                      <button onClick={() => changeQty(p, -1)}>−</button>
+                    </div>
+                  ) : (
+                    <div className="product-row-inputs">
+                      <input className="price-input" placeholder="قیمت" value={productPrices[p] || ""} onChange={(e) => setProductPrices((prev) => ({ ...prev, [p]: e.target.value.replace(/[^0-9]/g, "") }))} />
+                      <input className="price-input qty-input" placeholder="تعداد" value={productQtys[p] || ""} onChange={(e) => setProductQtys((prev) => ({ ...prev, [p]: e.target.value.replace(/[^0-9]/g, "") }))} />
+                      <input className="note-input" placeholder="توضیحات (اختیاری)" value={productNotes[p] || ""} onChange={(e) => setProductNotes((prev) => ({ ...prev, [p]: e.target.value }))} />
+                      <button className="add-chip" disabled={!productPrices[p]} onClick={() => {
+                        addDraftItem({ name: p, price: parseInt(productPrices[p], 10), qty: parseInt(productQtys[p], 10) || 1, note: (productNotes[p] || "").trim() });
+                        setProductQtys((prev) => ({ ...prev, [p]: "" })); setProductNotes((prev) => ({ ...prev, [p]: "" }));
+                      }}>افزودن</button>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
+            <div className="section-title" style={{ marginTop: 18 }}>کالای دیگر (موارد دیگر)</div>
+            <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
+              <input placeholder="نام کالا" value={customItemName} onChange={(e) => setCustomItemName(e.target.value)} style={{ flex: 2, border: "1px solid #D8CFB8", background: "#F5F0E6", borderRadius: 8, padding: "10px 12px", fontFamily: "Vazirmatn, sans-serif", fontSize: 13 }} />
+              <input placeholder="قیمت" value={customItemPrice} onChange={(e) => setCustomItemPrice(e.target.value.replace(/[^0-9]/g, ""))} style={{ flex: 1, border: "1px solid #D8CFB8", background: "#F5F0E6", borderRadius: 8, padding: "10px 12px", fontFamily: "IBM Plex Mono, monospace", fontSize: 13 }} />
+              <input placeholder="تعداد" value={customItemQty} onChange={(e) => setCustomItemQty(e.target.value.replace(/[^0-9]/g, ""))} style={{ width: 64, border: "1px solid #D8CFB8", background: "#F5F0E6", borderRadius: 8, padding: "10px 8px", fontFamily: "IBM Plex Mono, monospace", fontSize: 13, textAlign: "center" }} />
+              <button className="icon-btn" onClick={addCustomItem}>+</button>
+            </div>
+            <input placeholder="توضیحات (اختیاری)" value={customItemNote} onChange={(e) => setCustomItemNote(e.target.value)} style={{ width: "100%", border: "1px solid #D8CFB8", background: "#F5F0E6", borderRadius: 8, padding: "9px 12px", fontFamily: "Vazirmatn, sans-serif", fontSize: 12.5 }} />
+
+            {draftItems.length > 0 && (
+              <>
+                <div className="section-title" style={{ marginTop: 18 }}>سبد سفارش</div>
+                {draftItems.map((i) => (
+                  <div className="receipt-card" key={i.name}>
+                    <div className="receipt-row">
+                      <div><div className="receipt-name">{i.name}</div><div className="receipt-meta">{fmt(i.qty)} عدد × {fmt(i.price)} ت{i.note ? ` · ${i.note}` : ""}</div></div>
+                      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                        <span className="receipt-total">{fmt(i.qty * i.price)} ت</span>
+                        <button className="icon-btn" onClick={() => setDraftItems((prev) => prev.filter((x) => x.name !== i.name))}>🗑</button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
+
+            <div className="order-total-bar">
+              <div className="receipt-row" style={{ marginBottom: 10 }}><span style={{ fontWeight: 700, fontSize: 13.5 }}>جمع کل سفارش</span><span className="receipt-total" style={{ fontSize: 16 }}>{fmt(draftTotal)} تومان</span></div>
+              <button className="primary-btn" disabled={!draftCustomerId || draftItems.length === 0} onClick={submitOrder}>✓ ثبت سفارش</button>
+            </div>
+          </>
+        )}
+
+        {tab === "report" && (
+          <>
+            <button className="secondary-btn" onClick={exportExcel}>⬇ خروجی اکسل {currentUser.role === "manager" ? "(کل تیم)" : ""}</button>
+            {currentUser.role === "manager" && (
+              <>
+                <div className="section-title"><Ic size={16}>🏆</Ic> گزارش هر ویزیتور</div>
+                {repStats.map((r, idx) => {
+                  const pct = Math.round((r.total / Math.max(1, repStats[0]?.total || 1)) * 100);
+                  return (
+                    <div className="receipt-card" key={r.name}>
+                      <div className="receipt-row">
+                        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                          <span className="rank-num">{fmt(idx + 1)}</span>
+                          <div><div className="receipt-name">{r.name}</div><div className="receipt-meta">{fmt(r.count)} سفارش · پرفروش‌ترین: {r.topProduct}</div></div>
+                        </div>
+                        <div className="receipt-total">{fmt(r.total)} ت</div>
+                      </div>
+                      <div className="rank-bar-track"><div className="rank-bar-fill" style={{ width: `${pct}%` }} /></div>
+                    </div>
+                  );
+                })}
+                {repStats.length === 0 && <div className="empty-state">هنوز سفارشی از هیچ ویزیتوری ثبت نشده.</div>}
+                <div className="section-title" style={{ marginTop: 22 }}><Ic size={16}>📦</Ic> پرفروش‌ترین کالاها</div>
+                {productStats.slice(0, 8).map((p) => (
+                  <div className="receipt-card" key={p.name}><div className="receipt-row"><div><div className="receipt-name">{p.name}</div><div className="receipt-meta">{fmt(p.qty)} عدد فروخته شده</div></div><div className="receipt-total">{fmt(p.revenue)} ت</div></div></div>
+                ))}
+              </>
+            )}
+            <div className="section-title" style={{ marginTop: currentUser.role === "manager" ? 22 : 4 }}><Ic size={16}>📈</Ic> گزارش مشتریان {currentUser.role === "manager" ? "(کل تیم)" : ""}</div>
+            {rankedCustomers.map((c, idx) => {
+              const stat = customerTotals[c.id] || { count: 0, total: 0, last: null };
+              const pct = Math.round((stat.total / maxTotal) * 100);
+              if (stat.count === 0 && currentUser.role !== "manager") return null;
+              return (
+                <div className="receipt-card" key={c.id} onClick={() => { setSelectedCustomerId(c.id); setTab("customers"); }} style={{ cursor: "pointer" }}>
+                  <div className="receipt-row">
+                    <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      <span className="rank-num">{fmt(idx + 1)}</span>
+                      <div><div className="receipt-name">{c.shopName}</div><div className="receipt-meta">{fmt(stat.count)} سفارش · آخرین: {displayDate(stat.last)}</div></div>
+                    </div>
+                    <div className="receipt-total">{fmt(stat.total)} ت</div>
+                  </div>
+                  <div className="rank-bar-track"><div className="rank-bar-fill" style={{ width: `${stat.total ? pct : 0}%` }} /></div>
+                </div>
+              );
+            })}
+          </>
+        )}
+      </div>
+
+      {tab === "customers" && !selectedCustomerId && <button className="fab" onClick={() => setShowAddCustomer(true)}>+</button>}
+
+      <div className="bottom-nav">
+        <button className={`nav-btn ${tab === "dashboard" ? "active" : ""}`} onClick={() => setTab("dashboard")}>{tab === "dashboard" && <span className="nav-dot" />}<Ic size={19}>🏬</Ic> داشبورد</button>
+        <button className={`nav-btn ${tab === "customers" ? "active" : ""}`} onClick={() => { setTab("customers"); setSelectedCustomerId(null); }}>{tab === "customers" && <span className="nav-dot" />}<Ic size={19}>👥</Ic> مشتریان</button>
+        <button className={`nav-btn ${tab === "order" ? "active" : ""}`} onClick={() => setTab("order")}>{tab === "order" && <span className="nav-dot" />}<Ic size={19}>📋</Ic> سفارش جدید</button>
+        <button className={`nav-btn ${tab === "report" ? "active" : ""}`} onClick={() => setTab("report")}>{tab === "report" && <span className="nav-dot" />}<Ic size={19}>📈</Ic> گزارش</button>
+      </div>
+
+      {showAddCustomer && <AddCustomerModal onClose={() => setShowAddCustomer(false)} onSave={addCustomer} />}
+      {stampVisible && <div className="stamp"><div className="stamp-inner">ثبت شد ✓</div></div>}
+      {toast && <div className="toast-banner">{toast}</div>}
+      {storageError && <div style={{ position: "absolute", bottom: 78, left: 12, right: 12, background: "#B5443A", color: "#F5F0E6", fontSize: 11, padding: "8px 12px", borderRadius: 8, textAlign: "center" }}>ذخیره‌سازی موقتاً در دسترس نیست — دوباره تلاش کن.</div>}
+    </div></div>
+  );
+}
+
+function LoginScreen({ onLogin, storageError }) {
+  const [role, setRole] = useState("rep");
+  const [name, setName] = useState("");
+  return (
+    <div className="app-root"><div className="phone-shell">
+      <div className="login-wrap">
+        <div className="brand-row" style={{ justifyContent: "center", marginBottom: 18 }}><img src={LEMOX_LOGO} alt="LEMOX" className="brand-logo" style={{ width: 44, height: 44 }} /><span className="brand-name" style={{ fontSize: 20 }}>LEMOX</span></div>
+        <div className="eyebrow" style={{ color: "#B98B3D", fontWeight: 600, fontSize: 12, marginBottom: 6, justifyContent: "center" }}>دفتر ویزیتور</div>
+        <div className="login-title">وارد حساب خودت شو</div>
+        <div className="login-sub">هر نفر با نام خودش وارد می‌شه؛ سفارش‌ها و گزارش هر ویزیتور فقط برای خودش نمایش داده می‌شه.</div>
+        <div className="tab-toggle"><button className={role === "rep" ? "active" : ""} onClick={() => setRole("rep")}>ویزیتور</button><button className={role === "manager" ? "active" : ""} onClick={() => setRole("manager")}>مدیر</button></div>
+        <div className="field"><label style={{ color: "#C9CFDD" }}>نام و نام خانوادگی</label>
+          <input value={name} onChange={(e) => setName(e.target.value)} placeholder="مثلاً رضا کریمی" style={{ width: "100%", border: "1px solid #3A4E7A", background: "#233657", color: "#F5F0E6", borderRadius: 8, padding: "12px 14px", fontFamily: "Vazirmatn, sans-serif", fontSize: 14, outline: "none" }} />
+        </div>
+        <button className="primary-btn" style={{ background: "#B98B3D", marginTop: 8 }} disabled={!name.trim()} onClick={() => onLogin({ name: name.trim(), role })}>ورود</button>
+        {storageError && <div style={{ marginTop: 14, fontSize: 11, color: "#E5B4AC", textAlign: "center" }}>اتصال به دیتابیس برقرار نشد. اینترنت گوشی رو چک کن.</div>}
+      </div>
+    </div></div>
+  );
+}
+
+function AddCustomerModal({ onClose, onSave }) {
+  const [name, setName] = useState("");
+  const [shopName, setShopName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [category, setCategory] = useState("خودروشویی");
+  const [coords, setCoords] = useState(null);
+  const [locStatus, setLocStatus] = useState("idle");
+  const [manualLocation, setManualLocation] = useState("");
+  const canSave = name.trim() && shopName.trim() && phone.trim();
+
+  function captureLocation() {
+    if (!navigator.geolocation) { setLocStatus("error"); return; }
+    setLocStatus("loading");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => { setCoords({ lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy }); setLocStatus("success"); },
+      () => setLocStatus("error"),
+      { enableHighAccuracy: true, timeout: 12000, maximumAge: 0 }
+    );
+  }
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-sheet" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-header"><h3>افزودن مشتری جدید</h3><button className="icon-btn" onClick={onClose}>✕</button></div>
+        <div className="field"><label>نام فروشگاه</label><input value={shopName} onChange={(e) => setShopName(e.target.value)} placeholder="مثلاً اتوشویی کریمی" /></div>
+        <div className="field"><label>نام صاحب فروشگاه</label><input value={name} onChange={(e) => setName(e.target.value)} placeholder="مثلاً رضا کریمی" /></div>
+        <div className="field"><label>شماره تماس</label><input value={phone} onChange={(e) => setPhone(e.target.value.replace(/[^0-9]/g, ""))} placeholder="09xxxxxxxxx" /></div>
+        <div className="field"><label>آدرس</label><input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="آدرس فروشگاه" /></div>
+        <div className="field"><label>دسته‌بندی</label>
+          <select value={category} onChange={(e) => setCategory(e.target.value)}>
+            <option>خودروشویی</option><option>فروشگاه لوازم یدکی</option><option>تعویض روغنی</option><option>سایر</option>
+          </select>
+        </div>
+        <div className="field">
+          <label>موقعیت مکانی</label>
+          <div className="location-box">
+            {locStatus === "idle" && <button className="add-chip" onClick={captureLocation}>دریافت موقعیت مکانی فعلی (GPS)</button>}
+            {locStatus === "loading" && <div style={{ fontSize: 12 }}>⏳ در حال دریافت موقعیت...</div>}
+            {locStatus === "success" && coords && (
+              <>
+                <div style={{ fontSize: 12, color: "#4C7A6A", fontWeight: 600 }}>موقعیت ثبت شد (دقت ~{Math.round(coords.accuracy)} متر)</div>
+                <a className="map-link" href={`https://www.google.com/maps?q=${coords.lat},${coords.lng}`} target="_blank" rel="noreferrer">↗ مشاهده روی نقشه</a>
+              </>
+            )}
+            {locStatus === "error" && <div style={{ fontSize: 11.5, color: "#B5443A" }}>دسترسی به GPS ممکن نشد. موقعیت رو پایین بنویس.</div>}
+            <div style={{ marginTop: 10 }}>
+              <label style={{ display: "block", fontSize: 11, color: "#6b6250", marginBottom: 5, fontWeight: 600 }}>یا موقعیت را خودت بنویس (نشانی، لینک نقشه یا مختصات)</label>
+              <input value={manualLocation} onChange={(e) => setManualLocation(e.target.value)} placeholder="مثلاً: خیابان X، روبروی Y — یا لینک گوگل مپ"
+                style={{ width: "100%", border: "1px solid #D8CFB8", background: "#F5F0E6", borderRadius: 8, padding: "9px 11px", fontFamily: "Vazirmatn, sans-serif", fontSize: 12.5, color: "#1B2A4A", outline: "none" }} />
+            </div>
+          </div>
+        </div>
+        <button className="primary-btn" disabled={!canSave} onClick={() => onSave({ name, shopName, phone, address, category, manualLocation: manualLocation.trim(), ...(coords || {}) })}>✓ ذخیره مشتری</button>
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
